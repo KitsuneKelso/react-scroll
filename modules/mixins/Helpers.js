@@ -66,11 +66,11 @@ var Helpers = {
 
           if(!element) {
               element = scroller.get(to);
-
-              var cords = element.getBoundingClientRect();
-              top = (cords.top + y);
-              height = top + cords.height;
           }
+          
+          var cords = element.getBoundingClientRect();
+          top = (cords.top + y);
+          height = top + cords.height;
 
           var offsetY = y - this.props.offset;
 
